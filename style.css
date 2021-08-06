@@ -1,0 +1,135 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.btn {
+   
+    border-radius: 10px;
+    padding: 10px 20px;
+    align-items: center;
+    font-size:  20px;
+    background-color: rgb(189, 224, 123);
+    margin-bottom: 20px;
+}
+
+.header {
+    display: flex;
+    background-color: #542fdb;
+    align-items: center;
+    padding: 30px 0;
+}
+.title-area {
+    color: #fff;
+    font-size: 50px;
+    width: 60%;
+    margin-left: 50px;
+    font-style: normal;
+    font-weight: bold;
+    
+}
+
+.image-area {
+    width: 40%;
+}
+.image-area img {
+    
+    width: 100%;
+    padding: ;
+}
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 50px ;
+    justify-content: center;
+
+}
+.player {
+   
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    margin-right: 20px;
+    margin-bottom: 10px;
+    width: 330px;
+    height: 474px;
+    padding: 30px;
+ 
+}
+ .player img {
+    width: 300px;
+    height: 256px;
+}
+
+.container {
+    margin: 50px ;
+    text-align: center;
+    
+}
+.container a {
+    margin : 10px;
+    font-size: 25px;
+}
+.social-connection i {
+    color: cornflowerblue;
+}
+.social-connection i:hover {
+    transition: all 0;
+    color: rgb(85, 52, 236);
+}
+
+.copyright {
+    font-size: 18px;
+    
+}
+
+/* --
+media queries  */
+
+/* Mobile devices */
+@media (max-width: 668px) {
+    
+    .header {
+        flex-direction: column;
+    }
+    .title-area {
+        width: 50%;
+       margin: 0;
+    }
+    
+    
+    .players {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .logo-area img {
+        width: 30%;
+    }
+}
+/* 
+tablat devices */
+@media only screen and (min-width: 668px ) and (max-width: 992px) {
+    
+     .header {
+        flex-direction: column;
+     }
+     
+    .title-area {
+        width: 50%;
+        margin-bottom: 10px;
+    }
+    .players {
+            grid-template-columns: repeat(2, 1fr);
+            
+            
+
+    }
+  
+    .logo-area img {
+        width: 30%;
+    } 
+    
+}
+
